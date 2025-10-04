@@ -3,6 +3,8 @@ import useAxios from "../hooks/useAxios";
 import { useEffect } from "react";
 import { useProfile } from "../hooks/useProfile";
 import { actions } from "../actions";
+import ProfileInfo from "../components/profile/ProfileInfo";
+import MyPosts from "../components/profile/MyPosts"
 
 const ProfilePage = () => {
     const { state, dispatch } = useProfile();
@@ -41,10 +43,10 @@ const ProfilePage = () => {
     }
 
     return (
-        <div>
-            Welcome, {state?.user?.firstName}{' '}{state?.user?.lastName}
-            <p>You have {state?.posts?.length} posts</p>
-        </div>
+        <>
+            <ProfileInfo />
+            <MyPosts />
+        </>
     );
 };
 
