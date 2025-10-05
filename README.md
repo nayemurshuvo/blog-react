@@ -1,16 +1,40 @@
-# React + Vite
+# Blog React - Social Media Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A social media blog platform built with React, featuring user authentication, post management, real-time interactions, and profile customization.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Registration** - Create new accounts with form validation
+- **User Login** - Secure login with JWT tokens
+- **Protected Routes** - Private pages accessible only to authenticated users
+- **Auto Logout** - Session management and automatic logout
+- **Create Posts** - Write and publish new blog posts
+- **Delete Posts** - Remove posts
+- **Like Posts** - Like/unlike posts with real-time updates
+- **Comments System** - Add comments to posts
+- **Profile Pictures** - Upload and update avatar images
+- **Bio Management** - Edit personal bio and information
+- **My Posts** - View all posts created by the user
+- **Loading States** - Smooth loading indicators for better UX
+- **Error Handling** - User-friendly error messages
 
-## React Compiler
+## 🛠️ Technical Stack
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core Technologies
+- **React 19.1.1** - Latest React with modern features
+- **Vite** - Fast build tool and development server
+- **React Router DOM 7.9.1** - Client-side routing
+- **Axios** - HTTP client for API requests
+- **Tailwind CSS** - Utility-first CSS framework
 
-## Expanding the ESLint configuration
+### State Management Architecture
+- **Context API** - Global state management across components
+- **useReducer Hook** - Complex state logic with reducers
+- **Custom Hooks** - Reusable stateful logic
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Form Management
+- **React Hook Form 7.63.0** - Efficient form handling with validation
+- **Custom Field Components** - Reusable form input components
+
+
+Built with ❤️ using React, Context API, useReducer, and modern web technologies for learning purpose.
