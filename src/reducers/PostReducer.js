@@ -39,27 +39,23 @@ const postReducer = (state, action) => {
             };
         }
 
-        case actions.post.POST_COMMENTED: {
+        case actions.post.DATA_CREATED: {
             return {
                 ...state,
                 loading: false,
-                user: {
-                    ...state.user,
-                    avatar: action.data.avatar,
-                },
+                posts: [...state.posts, action.data],
             };
         }
 
-        case actions.post.POST_LIKED: {
+        case actions.post.POST_DELETED: {
             return {
                 ...state,
                 loading: false,
-                user: {
-                    ...state.user,
-                    avatar: action.data.avatar,
-                },
+                posts: state.posts.filter(post => post.id !== action.data),
             };
         }
+
+
 
         default: {
             return state;

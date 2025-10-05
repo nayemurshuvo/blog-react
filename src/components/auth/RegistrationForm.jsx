@@ -92,7 +92,7 @@ const RegistrationForm = () => {
             </Field>
             <p>{errors?.root?.random?.message}</p>
             <button
-                className="auth-input bg-lwsGreen font-bold text-white transition-all hover:opacity-90"
+                className="auth-input bg-myGreen font-bold text-black transition-all hover:opacity-90"
                 type="submit"
             >
                 Register
