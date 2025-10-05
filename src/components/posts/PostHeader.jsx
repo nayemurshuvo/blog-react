@@ -76,7 +76,7 @@ const PostHeader = ({ post }) => {
 
                 {showAction && (
                     <div className="action-modal-container">
-                        <button className="action-menu-item hover:text-lwsGreen">
+                        <button className="action-menu-item hover:text-myGreen">
                             <img src={EditIcon} alt="Edit" />
                             Edit
                         </button>
